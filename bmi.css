@@ -1,0 +1,175 @@
+body {
+  padding-top: 30px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #285880;
+  z-index: 2;
+}
+
+/************************input Section for bmi*********************************/
+.input_section_for_bmi {
+  width: 90%;
+  margin: auto;
+}
+
+.input_section_for_bmi .for_weight {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  background-color: ;
+}
+
+.input_section_for_bmi .for_height {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input_section_for_bmi label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input_section_for_bmi .for_height>input {
+  height: 40px;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.input_section_for_bmi #btn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+/*****************************BMI Output Section**********************************/
+.bmi_output_section {
+  border: 1px solid gray;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.bmi_output_header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  background-color: #169DB2;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  border-radius: 3px 3px 0 0;
+}
+
+/********paragraph only visible in big screen*****************/
+.bmi_basics {
+  display: none;
+}
+
+/*************************For all images of this webpage******************************/
+img {
+  width: 100%;
+  height: auto;
+}
+
+/**************************for details section below the webpage***************************/
+details {
+  margin: 10px;
+}
+
+details img {
+  margin-top: 10px;
+}
+
+
+
+
+/***********************css for big screen****************************************/
+@media screen and (min-width: 600px) {
+  img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .for_big_screen {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .input_section_for_bmi {
+    width: 50%;
+  }
+
+  .bmi_output_section {
+    margin: 0%;
+    width: 100%;
+  }
+
+  .output_big_screen {
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+  }
+
+  /***************************/
+  .bmi_basics {
+    display: block;
+  }
+
+  /********************************/
+  p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  li {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  details {
+    margin-left: 20px;
+
+  }
+}

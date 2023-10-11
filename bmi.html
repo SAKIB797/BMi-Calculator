@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BMI Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bmi.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <i class="bi bi-calculator"></i> BMI Calculator
+  </header>
+  <img src="/images/8549530.jpg" alt="">
+  <div class="for_big_screen">
+    <!-- -------------------------input section----------------------------------- -->
+    <div class="input_section_for_bmi">
+      <label for="weight_inpt">Weight in kg</label>
+      <input id="weight_inpt" class="for_weight" placeholder="Example - 50 kg" type="number" required>
+
+      <label for="feet">Height</label>
+      <div class="for_height">
+        <input id="feet" class="for_feet" type="number" placeholder="Example - 5 foot">
+        <input id="inch" class="for_inch" type="number" placeholder="Example - 2 inch">
+      </div>
+
+      <input id="btn" onclick="calBmi()" type="button" value="BMI">
+    </div>
+    <br>
+    <!----------------------------- output section--------------------------- -->
+    <div class="output_big_screen">
+      <p class="bmi_basics">
+        The body mass index (BMI) is a measure that uses your height and weight to work out if your weight is healthy.
+
+        The BMI calculation divides an adult's weight in kilograms by their height in metres squared. For example, A BMI
+        of 25 means 25kg/m2.
+      </p>
+      <div class="bmi_output_section">
+        <div class="bmi_output_header">
+          <i class="bi bi-info-circle"></i> BMI Info
+        </div>
+
+        Your bmi is - <span id="bmi_output"></span><br>
+        Your are - <span id="body_output"></span>
+      </div>
+    </div>
+
+  </div>
+  <!-- -----------------------details and others------------------------------- -->
+  <details>
+    <summary>
+      Click here for bmi chart
+    </summary>
+    <p class="bmi_chart">
+      <b>The body mass index (BMI) is a measure that uses your height and weight to work out if your weight is
+        healthy.</b> <br> <br>
+      The BMI calculation divides an adult's weight in kilograms by their height in metres squared. For example, A BMI
+      of 25 means 25kg/m2.
+    </p>
+    <h2>BMI Ranges</h2>
+    <p>
+      For most adults, an ideal BMI is in the 18.5 to 24.9 range. <br>
+      For children and young people aged 2 to 18, the BMI calculation takes into account age and gender as well as
+      height
+      and weight. <br><br>
+      <u>      If your BMI is:
+      </u>
+    <ul>
+      <li>below 18.5 – you're in the underweight range</li>
+      <li>between 18.5 and 24.9 – you're in the healthy weight range</li>
+      <li>between 25 and 29.9 – you're in the overweight range</li>
+      <li>30 or over – you're in the obese range</li>
+    </ul>
+    </p>
+  </details>
+
+  <img src="/images/8480522.jpg" alt="">
+
+  <script src="bmi.js"></script>
+</body>
+
+</html>
